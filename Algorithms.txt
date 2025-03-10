@@ -1,0 +1,464 @@
+1. Student Grade Calculator
+
+
+Step 1: Start
+Step 2: Prompt the user to input the following:
+
+Assignment score (out of 100)
+
+Midterm exam score (out of 100)
+
+Final exam score (out of 100)
+
+
+Step 3: Validate the inputs:
+
+If any score is less than 0 or greater than 100, display an error message and return to Step 2.
+
+
+Step 4: Calculate the weighted average using the formula:
+
+\text{Final Grade} = ( \text{Assignments} \times 0.30) + (\text{Midterm} \times 0.30) + (\text{Final Exam} \times 0.40)
+
+Step 5: Determine the pass/fail status:
+
+If Final Grade ≥ 60: Pass
+
+Otherwise: Fail
+
+
+Step 6: Display the final grade and the pass/fail status.
+
+Step 7: End
+
+2. ATM Banking System
+
+
+1. Start
+2. Initialize balance = 0
+3. Display Menu:
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+
+4. Repeat Until User Chooses to Exit
+
+Prompt user to select an option
+
+If Option = 1:
+
+Display current balance
+
+
+If Option = 2:
+
+Prompt user to enter deposit_amount
+
+If deposit_amount > 0:
+
+Add deposit_amount to balance
+
+Display updated balance
+
+
+Else:
+
+Display error message: "Invalid deposit amount."
+
+
+
+If Option = 3:
+
+Prompt user to enter withdraw_amount
+
+If withdraw_amount > 0 AND withdraw_amount <= balance:
+
+Subtract withdraw_amount from balance
+
+Display updated balance
+
+
+Else If withdraw_amount > balance:
+
+Display error message: "Insufficient funds."
+
+
+Else:
+
+Display error message: "Invalid withdrawal amount."
+
+
+
+If Option = 4:
+
+Display "Thank you for using the ATM."
+
+Exit the loop
+
+
+Else:
+
+Display error message: "Invalid option. Please try again."
+
+5. End
+
+3. Inventory Management System
+
+[17:34, 10/3/2025] ~Harshitha Wipro Wilp: 1. Start
+
+
+2. Initialize an Empty Inventory (e.g., as a dictionary)
+
+
+3. Display Menu:
+
+1. Add New Item
+
+
+
+2. Update Item Quantity
+
+
+
+3. Remove Item
+
+
+
+4. Display Inventory
+
+
+
+5. Exit
+
+
+
+
+
+4. Repeat Until User Chooses to Exit
+
+Prompt the user to select an option
+
+If Option = 1: (Add New Item)
+
+Prompt user for item_id, name, price, and quantity
+
+If item_id already exists, display an error
+
+Else: Add item details to the inventory
+
+
+If Option = 2: (Update Quantity)
+
+Prompt user for item_id
+
+If item_id exists, prompt for new_quantity and update it
+
+Else: Display "Item not found"
+
+
+If Option = 3: (Remove Item)
+
+Prompt user for item_id
+
+If item_id exists, remove it from inventory
+
+Else: Display "Item not found"
+
+
+If Option = 4: (Display Inventory)
+
+If inventory is empty, display "No items in inventory."
+
+Else, display each item with its details
+
+
+If Option = 5: (Exit)
+
+Display "Exiting program. Goodbye!" and exit the loop
+
+
+Else:
+
+Display "Invalid option. Please try again."
+
+5. End
+
+4. Prime Number Checker
+
+1. Start
+
+
+2. Input the number n
+
+
+3. If n <= 1, Output "Not a prime number" and End
+
+
+4. If n = 2, Output "Prime number" and End (2 is the smallest prime)
+
+
+5. If n is divisible by 2, Output "Not a prime number" and End
+
+
+6. For each integer i from 3 to √n (square root of n) with step 2:
+
+If n % i == 0:
+
+7.end
+
+5.Temperature Conversion System
+
+1. Start
+
+
+2. Display Menu for Input Temperature Scale:
+
+1. Celsius
+
+
+
+2. Fahrenheit
+
+
+
+3. Kelvin
+
+
+
+
+
+3. Prompt User to Select Input Scale (e.g., input_scale)
+
+
+4. Prompt User to Enter Temperature Value (e.g., temp_value)
+
+
+5. Display Menu for Output Temperature Scale:
+
+1. Celsius
+
+
+
+2. Fahrenheit
+
+
+
+3. Kelvin
+
+
+
+
+
+6. Prompt User to Select Output Scale (e.g., output_scale)
+
+
+7. Perform Conversion Based on User Choices:
+
+If Input = Celsius:
+
+To Fahrenheit: F = (C × 9/5) + 32
+
+To Kelvin: K = C + 273.15
+
+
+If Input = Fahrenheit:
+
+To Celsius: C = (F - 32) × 5/9
+
+To Kelvin: K = (F - 32) × 5/9 + 273.15
+
+
+If Input = Kelvin:
+
+To Celsius: C = K - 273.15
+
+To Fahrenheit: F = (K - 273.15) × 9/5 + 32
+
+
+
+
+8. Display the Converted Temperature
+
+
+9. End
+
+7.Library Book Management System
+
+
+1. Start
+
+
+2. Initialize an Empty Book Collection (e.g., dictionary with book details)
+
+
+3. Display Menu:
+
+1. Add a Book
+
+
+
+2. Remove a Book
+
+
+
+3. Check Out a Book
+
+
+
+4. Return a Book
+
+
+
+5. Display Book Collection
+
+
+
+6. Exit
+
+
+
+
+
+4. Repeat Until User Chooses to Exit:
+
+Prompt user to select an option
+
+
+
+5. If Option = 1: (Add a Book)
+
+Prompt for book_id, title, author, and year
+
+If book_id already exists, display "Book ID already exists."
+
+Else: Add the book to the collection with status set to Available
+
+
+
+6. If Option = 2: (Remove a Book)
+
+Prompt for book_id
+
+If book_id exists, remove it from the collection
+
+Else: Display "Book not found."
+
+
+
+7. If Option = 3: (Check Out a Book)
+
+Prompt for book_id
+
+If book_id exists and status = Available, set status to Checked Out
+
+Else If book_id exists and status = Checked Out, display "Book is already checked out."
+
+Else: Display "Book not found."
+
+
+
+8. If Option = 4: (Return a Book)
+
+Prompt for book_id
+
+If book_id exists and status = Checked Out, set status to Available
+
+Else If book_id exists and status = Available, display "Book is already available."
+
+Else: Display "Book not found."
+
+
+
+9. If Option = 5: (Display Collection)
+
+If collection is empty, display "No books in the collection."
+
+Else: Display book details with availability status
+
+
+
+10. If Option = 6: (Exit)
+
+Display "Exiting the system. Goodbye!" and exit the loop
+
+
+
+11. Else:
+
+Display "Invalid option. Please try again."
+
+
+
+12. End
+
+8.
+
+
+Step 1: Define Data Structures
+
+Use a dictionary or list to store events, where each event has:
+
+Title (string)
+
+Date (YYYY-MM-DD format)
+
+Time (HH:MM format)
+
+Description (string)
+
+
+
+Step 2: Implement Core Functions
+
+1. Add Event
+
+Prompt user for title, date, time, and description.
+
+Validate date and time format.
+
+Store event in a structured format (e.g., a dictionary or database).
+
+Check for scheduling conflicts before adding.
+
+
+
+2. View Events
+
+Display all events.
+
+Provide options to filter by day, week, or month.
+
+
+
+3. Search Events
+
+Allow users to search by title or description.
+
+
+
+4. Modify or Delete Event
+
+Find event by title or date.
+
+Allow users to edit or delete the event.
+
+
+
+5. Set Reminders
+
+Implement a notification system (e.g., print alerts or use a timer).
+
+
+
+6. Check for Schedule Conflicts
+
+Compare new event time with existing events.
+
+Alert the user if there's a conflict.
+
+
+7.end
+
+
+---
